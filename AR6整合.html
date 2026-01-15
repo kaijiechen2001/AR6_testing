@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>嘉義市 ArcGIS 綜合圖台彙整</title>
+    
+    <script type="module" src="https://js.arcgis.com/4.34/embeddable-components/"></script>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f2f5;
+            font-family: "Microsoft JhengHei", sans-serif;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+        /* 2. 儀表板排版容器 */
+        .dashboard-container {
+            display: flex;
+            flex-wrap: wrap;       /* 允許換行 */
+            justify-content: center; /* 內容置中 */
+            gap: 25px;             /* 地圖之間的間距 */
+        }
+        /* 個別地圖卡片樣式 */
+        .map-card {
+            background: white;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .map-title {
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #555;
+        }
+        /* 確保地圖在小螢幕不會破版 */
+        arcgis-embedded-map {
+            max-width: 100%;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>ArcGIS 空間資訊綜合圖台</h1>
+
+    <div class="dashboard-container">
+        
+        <div class="map-card">
+            <div class="map-title">圖層 1 (ID: 5553...)</div>
+            <arcgis-embedded-map 
+                style="height:600px; width:700px;" 
+                item-id="5553823b6ebe49a4b62b04952a03bd0c" 
+                theme="light" 
+                heading-enabled legend-enabled 
+                center="120.44209999999798,23.479158038524005" 
+                scale="72223.819286" 
+                portal-url="https://www.arcgis.com">
+            </arcgis-embedded-map>
+        </div>
+
+        <div class="map-card">
+            <div class="map-title">圖層 2 (ID: 1615...)</div>
+            <arcgis-embedded-map 
+                style="height:600px; width:700px;" 
+                item-id="161510d8ba85497a9de7ab07a1ee5577" 
+                theme="light" 
+                heading-enabled legend-enabled 
+                center="120.44039999999798,23.487358041672415" 
+                scale="72223.819286" 
+                portal-url="https://www.arcgis.com">
+            </arcgis-embedded-map>
+        </div>
+
+        <div class="map-card">
+            <div class="map-title">圖層 3 (ID: b354...)</div>
+            <arcgis-embedded-map 
+                style="height:600px; width:700px;" 
+                item-id="b354fee99a174c27a39eda4ef7096b77" 
+                theme="light" 
+                heading-enabled legend-enabled 
+                center="120.44219999999797,23.479158038524005" 
+                scale="72223.819286" 
+                portal-url="https://www.arcgis.com">
+            </arcgis-embedded-map>
+        </div>
+
+        <div class="map-card">
+            <div class="map-title">圖層 4 (ID: 285e...)</div>
+            <arcgis-embedded-map 
+                style="height:600px; width:700px;" 
+                item-id="285e8cce4ca44aaf809fbb7f0b1e130a" 
+                theme="light" 
+                heading-enabled legend-enabled 
+                center="120.44039999999798,23.487358041672415" 
+                scale="72223.819286" 
+                portal-url="https://www.arcgis.com">
+            </arcgis-embedded-map>
+        </div>
+
+        <div class="map-card">
+            <div class="map-title">圖層 5 (ID: 2e94...)</div>
+            <arcgis-embedded-map 
+                style="height:600px; width:700px;" 
+                item-id="2e949375a89447d09a15b0d31d08f70b" 
+                theme="light" 
+                heading-enabled legend-enabled 
+                center="120.44039999999798,23.487358041672415" 
+                scale="72223.819286" 
+                portal-url="https://www.arcgis.com">
+            </arcgis-embedded-map>
+        </div>
+
+        <div class="map-card">
+            <div class="map-title">圖層 6 (ID: c124...)</div>
+            <arcgis-embedded-map 
+                style="height:600px; width:700px;" 
+                item-id="c124289114164c5d882f9ca55d631e43" 
+                theme="light" 
+                heading-enabled legend-enabled 
+                center="120.45539999999998,23.482549999999996" 
+                scale="72223.819286" 
+                portal-url="https://www.arcgis.com">
+            </arcgis-embedded-map>
+        </div>
+
+    </div>
+
+</body>
+</html>
